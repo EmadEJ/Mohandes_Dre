@@ -1,5 +1,4 @@
-Thu Jun  1 06:45:11 UTC 2023
-predictor.v:11: error: Unable to bind wire/reg/memory `BRT' in `predictor_tb.p'
-predictor.v:16: error: Unable to bind wire/reg/memory `BRT' in `predictor_tb.p'
-2 error(s) during elaboration.
-An error occurred when opening .vcd file '.tmp.vcd'
+Thu Jun  1 06:48:24 UTC 2023
+Test 'predictor' failed for src file 'predictor.v'
+src file 'predictor.v': 0/1 tests passed
+
