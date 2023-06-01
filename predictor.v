@@ -1,7 +1,17 @@
 module predictor(input wire request, result, clk, taken, output reg prediction);
 
     reg[1:0] BHT [255:0];
-    reg[7:0] BRH;
+    reg[7:0] BRH = 8'b0;
+
+    integer i;
+    initial begin    
+        for(i = 0; i < 256;i = i + 1) begin
+            BHT[i] = 0;
+        end
+        
+        prediction = 0;
+    end
+
     always @(posedge clk) begin
         if(request == 1) begin
             prediction = BHT[BRH][1];
